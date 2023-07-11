@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('../fonts/index.css');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --gradient-start: #1ed4ab;
+  --gradient-end: #02b5e3;
+  --gradient2-start: #b1edc4;
+  --gradient2-end: #24d7ab;
+  --primary-color: #032541;
+  --tmdbDarkBlue: #33765;
+  --secondary-color: #fff;
+  font-family: 'CircularStd', 'inter', sans-serif !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --gradient-start: #1ed4ab;
+    --gradient-end: #02b5e3;
+    --primary-color: #032541;
+    --secondary-color: #fff;
+    --tmdbDarkBlue: #33765;
+    --gradient2-start: #b1edc4;
+    --gradient2-end: #24d7ab;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+.custom-text-shadow {
+  text-shadow: 1px 1px 7px rgb(49, 49, 49);
+}
+
+.custom-shadow {
+  filter: drop-shadow(2px 2px 3px rgb(121, 121, 121));
+}
